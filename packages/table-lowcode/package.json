@@ -1,5 +1,5 @@
 {
-  "name": "@leen-table/lowcode",
+  "name": "nuxt-app",
   "private": true,
   "type": "module",
   "scripts": {
