@@ -118,6 +118,9 @@ importers:
       nuxt:
         specifier: ^3.8.2
         version: 3.8.2(@types/node@18.19.3)(eslint@8.56.0)(typescript@5.3.3)(vite@5.0.10)(vue-tsc@1.8.25)
+      nuxt-primevue:
+        specifier: ^0.2.2
+        version: 0.2.2(vue@3.3.13)
       vue:
         specifier: ^3.3.12
         version: 3.3.13(typescript@5.3.3)
@@ -5531,6 +5534,17 @@ packages:
       fsevents: 2.3.3
     dev: true
 
+  /nuxt-primevue@0.2.2(vue@3.3.13):
+    resolution: {integrity: sha512-OfXDe5V0WovXt9b2GOjYV1kyVXmcFfj+6DqVs1pbeP4EyF2H0SbIMoUTT8Ax+sXT/tQ+mXr3qTFD9Y6IL+Y9og==}
+    dependencies:
+      '@nuxt/kit': 3.8.2
+      primevue: 3.44.0(vue@3.3.13)
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+      - vue
+    dev: true
+
   /nuxt@3.8.2(@types/node@18.19.3)(eslint@8.56.0)(typescript@5.3.3)(vite@5.0.10)(vue-tsc@1.8.25):
     resolution: {integrity: sha512-HUAyifmqTs2zcQBGvcby3KNs2pBAk+l7ZbLjD1oCNqQQ+wBuZ1qgLC4Ebu++y4g3o3Y8WAWSvpafbKRLQZziPw==}
     engines: {node: ^14.18.0 || >=16.10.0}
@@ -6231,6 +6245,14 @@ packages:
       '@jest/schemas': 29.6.3
       ansi-styles: r2.cnpmjs.org/ansi-styles@5.2.0
       react-is: 18.2.0
+    dev: true
+
+  /primevue@3.44.0(vue@3.3.13):
+    resolution: {integrity: sha512-BqSg6rKP0vq7WRHhLlVt4BD4rQZbVVXjgSfOAcebv3mO4wJZcJbgC04mxAI9fl26PhmPy1jLOuCtNOBWo7IekA==}
+    peerDependencies:
+      vue: ^3.0.0
+    dependencies:
+      vue: 3.3.13(typescript@5.3.3)
     dev: true
 
   /proc-log@3.0.0:
