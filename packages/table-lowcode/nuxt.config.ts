@@ -1,12 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: [
-    '@unocss/nuxt',
-    'nuxt-primevue'
+  css: [
+    "primevue/resources/themes/lara-dark-teal/theme.css",
+    "primeicons/primeicons.css",
+    "@/assets/main.css",
   ],
-  // @ts-ignore
+  modules: ['nuxt-primevue', '@nuxtjs/tailwindcss'],
   primevue: {
-    /* Options */
+    components: {
+      include: ['Button', 'DataTable']
+    }
+  },
+  tailwindcss: {
+    // Options
   }
 })
