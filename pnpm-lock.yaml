@@ -73,7 +73,11 @@ importers:
         specifier: ^1.8.25
         version: 1.8.25(typescript@5.3.3)
 
-  examples: {}
+  examples:
+    dependencies:
+      '@tanstack/vue-table':
+        specifier: ^8.11.2
+        version: 8.11.2(vue@3.3.13)
 
   packages/configs: {}
 
@@ -856,6 +860,21 @@ packages:
   /@sinclair/typebox@0.27.8:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
+
+  /@tanstack/table-core@8.11.2:
+    resolution: {integrity: sha512-rR0VEQOtr0ARLvaNLaSQnt2BVwOp0OavOUA0LcZ3N45tLYXc4sXruNv8kJ7R7+5W1CrzGha217tzjBG83CpoMQ==}
+    engines: {node: '>=12'}
+    dev: false
+
+  /@tanstack/vue-table@8.11.2(vue@3.3.13):
+    resolution: {integrity: sha512-xAQA3twDaCLAKYxF3u7mOXTyhD51Rh9lsSqs/CS05auMGV0ajC4+1X7inMjc9uqb7qSaM7T1OUoQlj/kv1raSQ==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      vue: ^3.2.33
+    dependencies:
+      '@tanstack/table-core': 8.11.2
+      vue: 3.3.13(typescript@5.3.3)
+    dev: false
 
   /@tsconfig/node18@18.2.2:
     resolution: {integrity: sha512-d6McJeGsuoRlwWZmVIeE8CUA27lu6jLjvv1JzqmpsytOYYbVi1tHZEnwCNVOXnj4pyLvneZlFlpXUK+X9wBWyw==}

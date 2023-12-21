@@ -9,9 +9,9 @@
   "author": "",
   "license": "ISC",
   "exports": {
-    "./*.json": "./configs/*.json",
+    "./*.json": "./*.json",
     "./*": {
-      "import": "./configs/*.json"
+      "import": "./*.json"
     }
   }
 }
