@@ -13,16 +13,22 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test:e2e": "playwright test -c playwright-ct.config.ts"
   },
   "dependencies": {
+    "@leen-table/core": "workspace:*",
     "vue": "^3.3.11"
   },
   "devDependencies": {
+    "@leen-table/configs": "workspace:*",
+    "@playwright/experimental-ct-vue": "^1.40.1",
+    "@types/node": "^18.19.3",
     "@vitejs/plugin-vue": "^4.5.2",
+    "@vue/compiler-dom": "^3.3.13",
+    "@vue/compiler-sfc": "^3.3.13",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
-    "vue-tsc": "^1.8.25",
-    "@leen-table/configs": "workspace:*"
+    "vue-tsc": "^1.8.25"
   }
 }

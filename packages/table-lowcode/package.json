@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "@leen-table/lowcode",
   "private": true,
   "type": "module",
   "scripts": {
@@ -17,5 +17,8 @@
     "primeicons": "^6.0.1",
     "vue": "^3.3.12",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "primevue": "^3.44.0"
   }
 }

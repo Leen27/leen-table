@@ -2,11 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: [
+    "@/assets/main.css", 
     "primevue/resources/themes/lara-dark-teal/theme.css",
     "primeicons/primeicons.css",
-    "@/assets/main.css",
   ],
-  modules: ['nuxt-primevue', '@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-primevue'],
   primevue: {
     components: {
       include: ['Button', 'DataTable']

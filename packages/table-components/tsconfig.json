@@ -1,0 +1,16 @@
+{
+  "extends": "@leen-table/configs/tsconfig.vue.json",
+  "references": [
+    { "path": "../configs/tsconfig.node.json" }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": "src",
+    "outDir": "types",
+    "paths": {
+      "@/src/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["src/**/__tests__/*", "src/**/*.test.ts", "__test__", "e2e"],
+}

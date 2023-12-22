@@ -2,17 +2,9 @@
   "name": "leen-table",
   "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "run-p type-check \"build-only {@}\" --",
-    "preview": "vite preview",
-    "test:unit": "vitest",
-    "test:e2e": "playwright test",
-    "build-only": "vite build",
-    "type-check": "vue-tsc --build --force",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/"
+    "lowcode:dev": "pnpm --filter @leen-table/lowcode run dev",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "vue": "^3.3.11"
