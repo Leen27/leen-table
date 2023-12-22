@@ -3,7 +3,7 @@ import {
     defineComponent,
     // SetupContext
 } from 'vue'
-
+import TableView from './table.vue'
 function LTable<Props extends any>(
     // props: Props,
     // context: SetupContext<{}, {}>
@@ -13,7 +13,7 @@ function LTable<Props extends any>(
         h(
             'div',
             [
-                h('span', 'leen table')
+                h(TableView)
             ]
         )
 }

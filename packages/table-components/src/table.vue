@@ -108,6 +108,7 @@ const table = useVueTable({
 
 <template>
   <div class="p-2">
+    leen table
     <table>
       <thead>
         <tr

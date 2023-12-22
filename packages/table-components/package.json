@@ -11,13 +11,15 @@
   "module": "./dist/index.js",
   "types": "./types/index.d.ts",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --config vite-example.config.ts",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "test:e2e": "playwright test -c playwright-ct.config.ts"
+    "test:e2e": "playwright test -c playwright-ct.config.ts",
+    "test:e2e-ui": "playwright test --ui -c playwright-ct.config.ts"
   },
   "dependencies": {
     "@leen-table/core": "workspace:*",
+    "@tanstack/vue-table": "^8.11.2",
     "vue": "^3.3.11"
   },
   "devDependencies": {

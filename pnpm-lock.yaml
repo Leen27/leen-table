@@ -86,6 +86,9 @@ importers:
       '@leen-table/core':
         specifier: workspace:*
         version: link:../table-core
+      '@tanstack/vue-table':
+        specifier: ^8.11.2
+        version: 8.11.2(vue@3.3.13)
       vue:
         specifier: ^3.3.11
         version: 3.3.13(typescript@5.3.3)
