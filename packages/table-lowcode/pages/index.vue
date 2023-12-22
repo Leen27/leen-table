@@ -1,5 +1,17 @@
+<script setup lang="ts">
+import { io } from 'socket.io-client'
+const connected = ref(false)
+onMounted(() => {
+  const socket = io();
+  socket.on('connect', () => {
+    connected.value = socket.connected
+  });
+  socket.on('disconnect', () => {
+    connected.value = socket.connected
+  });
+})
+</script>
+
 <template>
-    <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <div>Connected: {{ connected }}</div>
 </template>
