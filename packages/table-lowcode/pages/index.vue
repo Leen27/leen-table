@@ -2,6 +2,19 @@
 import Button from 'primevue/button';
 const { data } = await useFetch('/api/hello')
 const checked = ref(false);
+import { ref, onMounted } from 'vue';
+
+const items = ref([
+    {
+        label: 'Personal Info'
+    },
+    {
+        label: 'Reservation'
+    },
+    {
+        label: 'Review'
+    }
+]);
 
 </script>
 
@@ -20,6 +33,9 @@ const checked = ref(false);
     </div>
     <div class="card flex justify-content-center">
         <Checkbox v-model="checked" :binary="true" />
+    </div>
+    <div class="card">
+        <Steps :model="items" />
     </div>
   </div>
 </template>
