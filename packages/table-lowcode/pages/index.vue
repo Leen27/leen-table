@@ -1,17 +1,10 @@
-<script setup lang="ts">
-import { io } from 'socket.io-client'
-const connected = ref(false)
-onMounted(() => {
-  const socket = io();
-  socket.on('connect', () => {
-    connected.value = socket.connected
-  });
-  socket.on('disconnect', () => {
-    connected.value = socket.connected
-  });
-})
+<script setup>
+const { data } = await useFetch('/api/hello')
 </script>
 
 <template>
-  <div>Connected: {{ connected }}</div>
+  <div>
+    <p>Result of <UKbd size="lg">/api/hello</UKbd>:</p>
+    <pre>{{ data }}</pre>
+  </div>
 </template>

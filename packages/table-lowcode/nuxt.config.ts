@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     "primevue/resources/themes/lara-dark-teal/theme.css",
     "primeicons/primeicons.css",
   ],
-  modules: ['nuxt-socket-io', '@nuxtjs/tailwindcss', 'nuxt-primevue'],
+  modules: ['@nuxtjs/tailwindcss', 'nuxt-primevue'],
   primevue: {
     components: {
       include: ['Button', 'DataTable']
@@ -16,11 +16,4 @@ export default defineNuxtConfig({
   tailwindcss: {
     // Options
   },
-  io: {
-    // module options
-    sockets: [{
-      name: 'main',
-      url: 'http://localhost:3001'
-    }]
-  }
 })
