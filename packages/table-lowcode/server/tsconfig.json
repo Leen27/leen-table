@@ -1,4 +1,4 @@
 {
   "extends": "../.nuxt/tsconfig.server.json",
-  "exclude": ["node_modules", "../tailwind.config.js"]
+  "exclude": ["node_modules", "../tailwind.config.js", "../assets"]
 }
