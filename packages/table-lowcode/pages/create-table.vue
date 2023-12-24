@@ -1,3 +1,8 @@
 <template>
-  this is edit create page
+  <div>
+    <table></table>
+  </div>
 </template>
+<script setup lang="ts">
+// column
+</script>
